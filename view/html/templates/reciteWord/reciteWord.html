@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+  <head>
+    <title>Recite Words</title>
+    <meta name="description=" content="Copyright by Yi Yao">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../view/css/reciteWord.css">
+    <script type="text/javascript" src="../../view/js/lib/jquery.js"></script>
+    <script type="text/javascript" >
+    function myCheckFunction() {if (confirm("Are you sure to check the answer?")){} else {}}
+    </script>
+  </head>
+  
+  <header>
+	<div class="header-image"></div>
+  </header>
+
+
+	<body>  
+		<section class = "recite">
+			<div id = "def">
+				{DEFINITION}
+			</div>
+	
+	
+			<div  id = "wordList">
+		 		<form method = "POST" data-correct="{CORRECT_WORD}" >
+		
+					<button id="b01" type="submit" name = "chooseWord" value = {WORD1}>{WORD1}</button>
+			
+					<button id="b02" type="submit" name = "chooseWord" value = {WORD2}>{WORD2}</button>
+			
+					<button id="b03" type="submit" name = "chooseWord" value = {WORD3}>{WORD3}</button>
+			
+					<button id="b04" type="submit" name = "chooseWord" value = {WORD4}>{WORD4}</button>
+				</form> 
+			</div>
+	
+			
+	
+			<div id = "message">{MESSAGE}</div>
+	
+	
+			<div  id = "checkresult">
+		 		<form action = "../recite/checkAns.php" method = "POST" " >
+		 			<button onclick="myCheckFunction()" type="submit" name = "checkAns" ><img src = "../../view/img/check.jpeg" width = "30" height = "30" border="0"/>Check Answers</button>
+		 		</form> 
+		 	</div>
+	
+			<div id  = "back">
+				<label><a href="../../index.php"><img src = "../../view/img/index.jpg" width = "90" height = "60" border="0"/></a></label>
+			</div>
+	
+	</section>
+  
+  </body>
+</html>

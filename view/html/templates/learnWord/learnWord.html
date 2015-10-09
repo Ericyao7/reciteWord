@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS546 Final Project</title>
+    <meta name="description=" content="Copyright by Yi Yao">
+    <meta charset="UTF-8">
+	<script type="text/javascript" src="../../view/js/lib/jquery.js"></script>
+	<script type = "text/javascript">
+	function myCleanFunction() {
+		if (confirm("Are you sure to clean all the record \nAll the words your have learn before will be lost")){
+	   		} else {}
+		}
+	</script>
+ 	
+ 	<link rel="stylesheet" href="../../view/css/learnWord.css">
+    
+  </head>
+  
+  <header>
+	<div class="header-image"></div>
+  </header>
+
+  <body>  
+	<section class = "learn">
+		<div id  ="word">
+	 		{NEWWORD}
+		</div>
+	
+		<div id = "def">
+			{DEFINITION}
+		</div>
+	
+		<div id  = "next">
+			<form method="POST" >
+				<button type = "submit" name = "learnNext"><img src = "../../view/img/next.jpg" width = "30" height = "30" border="0"/>Next</button>
+			</form>
+		</div>
+	
+		<div id =  "restart">
+			<form  method="POST" >
+				<button type = "submit" name = "restart"><img src = "../../view/img/restart.png" width = "30" height = "30" border="0"/>Restart</button>
+		    </form>
+		</div>
+	
+		<div id= "clean">
+			<form method="POST" >
+				<button  onclick="myCleanFunction()" type = "submit" name = "cleanAndRestart"><img src = "../../view/img/clean.png" width = "30" height = "30" border="0"/>Clean&Restart</button>
+			</form>
+		</div>
+	
+		<div id = "translate"><label><a href="https://translate.google.com/">Still has doubt? Check the google translate</a></label></div>
+	
+	</section>
+	
+	<div id = "quit">
+		<label><a href="../../index.php"><img src = "../../view/img/index.jpg" width = "90" height = "60" border="0"/></a></label>
+	</div>
+	
+	<div id = "message">{MESSAGE}</div>
+	
+  
+  </body>
+  
+ 
+</html>

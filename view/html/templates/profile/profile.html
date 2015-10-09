@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GB18030">
+<title>Profile Page</title>
+<link rel="stylesheet" href="../../view/css/profile.css">
+</head>
+
+<header>
+	<div class="header-image"></div>
+</header>
+
+<body>
+	<div id="user_info" >
+		<span class="pro_icon"><img  alt="{USER_NAME}" src="../../php/img/{USER_IMG}" width = "150" height = 150"></span> 
+			{USER_NAME}
+			<form action="../../php/login/Login.php" method="POST">
+				Your Last recite Accurancy is {ACCURANCY}
+			</form>
+	</div>
+	
+	<div id  = "back">
+		<label><a href="../../index.php">Back</a></label>
+	</div>
+
+	<section class = "words">
+		<div id = "table">
+			{BODY} 
+		</div>
+	</section>
+	
+</body>
+</html>

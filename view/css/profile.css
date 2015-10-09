@@ -1,0 +1,59 @@
+.header-image {
+    position:absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    bottom: 0;
+    background: url(../../view/img/header1.jpg) no-repeat 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+	
+.footer-image {
+    position: relative;
+    top:550px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    bottom: 0;
+    background: url(../../view/img/footer.jpg) no-repeat 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+
+
+div#user_info{
+    position:relative;
+    left:0px;
+    top:200px;
+	color:red;
+	font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+	}
+
+
+div#table{
+	position:relative;
+    left:250px;
+    top:200px;
+	color:red;
+	font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+}
+
+div#back{
+	position:relative;
+    left:0px;
+    top:0px;
+	
+	font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+}

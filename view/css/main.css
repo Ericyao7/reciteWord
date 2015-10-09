@@ -1,0 +1,135 @@
+div#ajaxall{
+		position:absolute;
+		left:10px;
+		top:100px
+}
+
+
+	
+div#signout{
+		position:absolute;
+		left:10px;
+		top:50px
+}
+	
+
+   
+.features {
+    margin: 0 0 88px;
+}
+.features-columns {
+ 	position: relative;
+	top:10px;
+    margin: 0 -10px;
+}
+.features-column {
+    float: left;
+    
+    width: 33.33%;
+    padding: 0 25px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 80px;
+}
+.features-column h3 {
+    position: relative;
+    margin: 0 0 40px;
+}
+.features-column h3:after {
+    content: "";
+    left: 50%;
+    bottom: -20px;
+    height: 2px;
+    width: 22px;
+    margin: 0 0 0 -11px;
+    background: #ccd0d2;
+    position: absolute;
+    -moz-transition: background 0.15s linear;
+    -o-transition: background 0.15s linear;
+    -webkit-transition: background 0.15s linear;
+    transition: background 0.15s linear;
+}
+.features-column:hover h3:after {
+    background: #e2574c;
+}
+.ico-bulb,
+.ico-rocket,
+.ico-flag {
+    display: block;
+    margin: 0 auto 30px;
+    height: 104px;
+    width: 104px;
+    background-position: -200px 0;
+   } 
+.ico-bulb {
+    background-position: -100px 0;
+  
+    width: 44px;
+}
+.ico-flag {
+    background-position: -300px 0;
+    
+}
+
+.fun{
+	position: relative;
+	top:10px;
+}
+
+.footer-image {
+    position: relative;
+    top:300px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    bottom: 0;
+    background: url(../img/footer.jpg) no-repeat 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+
+
+
+div#learnpic{
+	position:relative;
+	top:50px;
+	left:20px;
+}
+
+
+div#learnFun{
+	position:relative;
+	top:50px;
+	left:20px;
+}
+
+
+div#recitepic{
+	position:relative;
+	top:100px;
+	left:20px;
+}
+
+div#reciteFun{
+	position:relative;
+	top:100px;
+	left:20px;
+}
+div#otherpic{
+	position:relative;
+	top:150px;
+	left:20px;
+}
+
+div#profile{
+	position:relative;
+	top:150px;
+	left:20px;
+}	
+	

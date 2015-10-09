@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Index</title>
+<link rel="stylesheet" href="view/css/main.css" type="text/css" />
+<!-- slider -->
+<link rel="stylesheet" href="view/css/slider.css">
+ <style>
+    #slides{
+    	position:relative;
+    	top:240px;
+		
+    }
+#slides .slidesjs-navigation {
+      margin-top:3px;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(view/img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+ </style>
+</head>
+
+
+
+<body>
+<BR><BR><h1 align = "center">Welcome to the recite word!</h1><BR><BR><BR><BR><BR><BR><BR>
+
+<section class="features">
+            <div class="wrap">
+                <div class="features-columns clearfix">
+                    <div class="features-column">
+                        <span class="ico-bulb"></span>
+                       
+                        <img src="view/img/profile.jpeg" width="128" height="128" >
+                        <h3>Easy to use</h3>
+                        <p>Simple functions for you to use in this website</p>
+                    </div><!-- features-column -->
+                    <div class="features-column">
+                        <span class="ico-rocket"></span>
+                        <img src="view/img/learn.jpg" width="128" height="128" >
+                        <h3>Divide in serval classification</h3>
+                        <p>Depend on your requirement, you can choose your classification to learn</p>
+                    </div><!-- features-column -->
+                    <div class="features-column">
+                        <span class="ico-flag"></span>
+                        <img src="view/img/recite.jpg" width="128" height="128" >
+                        <h3>Review and quiz</h3>
+                        <p>You can review the words you have learn and take a little quiz to self-check</p>
+                    </div>
+                </div>
+                <div class="separator"></div>
+            </div>
+        </section>
+
+
+<!-- User Info -->
+<div id = "signout">
+	<form action="php/login/Login.php" method="POST">
+		<input type = "hidden" name = "logout">
+		<button type="submit"><img src="view/img/logout.jpg" width="30" height="30"></button>
+	</form>
+</div>
+
+
+
+<section class = "fun">
+<hr/>
+	<div id = "learnpic">
+		<img src="view/img/rocket.jpg" width="128" height="128" />
+	</div>
+		
+	<div id = "learnFun" >
+		<form action="php/learn/learnWord.php" method="POST" >
+			<h1> CHOOSE THE CLASSIFICATION AND TAKE THE ACTON NOW!</h1>
+			<input type="radio" name="classification" value="1" id="classfication1" checked/><label for="classification1">Primary Class </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+        	<input type="radio" name="classification" value="2" id="classfication2" /><label for="classification2"> Junior Class</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                
+        	<input type="radio" name="classification" value="3" id="classfication3" /><label for="classification3">Senior Class</label>&nbsp;
+             <BR><BR> <button type="submit"  id = "learn">Go to learn!</button>
+    	</form>
+	
+	</div>
+
+	<div id = "recitepic">
+		<img src="view/img/flag.jpg" width="128" height="128" id  = "reciteWordImg" />
+	</div>
+	
+	<div id = "reciteFun" >
+		<form action="php/recite/reciteWord.php" method="POST">
+			<h2>CHOOSE THE CLASSIFICATION THE RECITE THE WORDS</h2>
+			<input type="radio" name="classification" value="1" id="classfication1"  checked/><label for="classification1">Primary Class </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="classification" value="2" id="classfication2" /><label for="classification2">Junior Class</label>&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="classification" value="3" id="classfication3" /><label for="classification3">Senior Class</label>&nbsp;
+            <BR> <BR> <button type="submit" id = "recite">Go recite now!</button>
+        </form>
+	</div>
+
+
+	<div id = "otherpic">
+		<img src="view/img/bulb.jpeg" width="128" height="128" id  = "reciteWordImg" />
+	</div>
+	
+	<div id = "otherFun" >
+		<div id = "profile">
+			<h3>TO SEE THE WORDS YOU HAVE LEARN SO FAR!</h3>
+			<form action = "php/profile/profile.php">
+				<button type="submit" id = "profile">See WordBook</button>
+			</form>
+		</div>
+	</div>
+
+</section>
+
+<div id = "ajaxall">
+	<div id="ajaxx"><h2>Do you like this website?</h2></div>
+	<button id = "ajaxbt">Yes!</button>
+</div>
+
+<div class="container">
+    <div id="slides">
+      <a href="http://www.stevens.edu"><img src="view/img/example-slide-1.jpg"></a>
+      <a href="http://www.stevens.edu"><img src="view/img/example-slide-2.jpg" ></a>
+      <a href="http://www.stevens.edu"><img src="view/img/example-slide-3.jpg" ></a>
+      <a href="http://www.stevens.edu"><img src="view/img/example-slide-4.jpg" ></a>
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+    </div>
+ </div>
+
+
+<footer>
+	<div class="footer-image"></div>
+</footer>
+
+
+
+  <script src="view/js/jquery.js"></script>
+  <script src="view/js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: false
+      });
+    });
+  </script>	
+ <script>
+$(document).ready(function(){
+  $("#ajaxbt").click(function(){
+    $("#ajaxx").load("view/html/templates/data.txt",function(responseTxt,statusTxt,xhr){
+      
+    });
+  });
+});
+</script>
+
+
+</body>
+</html>

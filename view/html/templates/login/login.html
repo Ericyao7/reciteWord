@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS546 Final Project</title>
+    <meta name="description=" content="Copyright by Yi Yao">
+    <meta charset="UTF-8">
+    <style type="text/css">
+			.message {
+				font-style: italic;
+				font-weight: bold;
+			}
+           body{text-align:center};
+           
+           ＃login{text-align:center};
+   </style>
+   <style type="text/css">
+   	.header-image {
+    position:absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    bottom: 0;
+    background: url(../../view/img/header1.jpg) no-repeat 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+	
+	#div1{
+		position:relative;
+		top:300px;
+		left:550;
+		
+	}
+	
+	#div3{color:red;}
+	
+	
+	
+</style>
+
+<script type = "text/javascript">
+    function validateInput() {
+        var u = document.forms["myForm"]["uname"].value;
+        var pwd = document.forms["myForm"]["pwd"].value;
+        if (u == null || u == "") {
+            alert("Please input your user name");
+            return false;
+        }
+        else if (pwd == null || pwd == ""){
+        	alert("Please enter your password");
+        	return false;
+        }
+    }
+</script>
+  </head>
+  
+  <header>
+	<div class="header-image"></div>
+  </header>
+ 
+  <body>
+  	 
+  	
+	<div id = "div1">
+		<h2>Welcome to The Recite Word</h2><br>
+		<form name = "myForm" method="POST" action="Login.php" onsubmit = "return validateInput()">
+		<div class = "table">
+		<table align = "center" cellspacing = "10">
+			<tr>
+				<td><b>User Name:</b></td>
+				<td><input type="text" name="uname" size="25" value="{USER}" placeholder = "User Name"/></td>
+			</tr>
+			<tr>
+				<td><b>Password:</b></td>
+				<td><input type="password" name="pwd" size="25"/></td>
+			</tr>
+		</table>
+		
+		<br>
+		<input type="hidden" name="hiddensubmit">
+		<button type="submit" name="submit" >Log in</button>
+		<button type="reset" name="reset">Reset </button>
+		</div>
+		</form>
+	</div>
+	
+	
+	<div id = "div3">
+		{ERROR_MESSAGE}
+	</div>
+	<div id = "div4">
+		<label>
+			<a href="Register.php">No Account?  Register Now!</a>
+		</label>
+	</div>
+	
+	
+    </body>
+</html>

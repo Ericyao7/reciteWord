@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+<meta charset="UTF-8">
+<title>User Register</title>
+<style type = "text/css">
+.header-image {
+    position:absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    bottom: 0;
+    background: url(../../view/img/header1.jpg) no-repeat 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div#div2{
+	position:relative;
+	top:180px;
+}
+	
+div.error {
+	color: red;
+    align:center;
+}
+    	
+.profile_wrapper {
+	width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    align:center;
+    }
+    	
+body{text-align:center};
+</style>
+
+
+
+ <script type="text/javascript" src="../../view/js/register.js"></script>
+</head>
+
+
+<header>
+	<div class="header-image"></div>
+</header>
+
+
+
+<body>
+	<div id= "div2">
+    	<h1>Sign up now and begin your words journey!</h1>
+		<section id = "Register">
+			<form name = "myForm" method="POST" action="Register.php" onsubmit = "return validateInput();" enctype="multipart/form-data">
+				<table align ="center" cellspacing="10">
+					<tr>
+						<td><b>User Name:</b></td>  
+						<td><input type="text" id="uname" name="uname" size="35" value="{USER_NAME}"/></td>
+					</tr>
+					<tr>
+						<td><b>Password:</b></td>  
+						<td><input type="password" id="pwd" name="pwd" size="35" /><BR></td>
+					</tr>
+					<tr>
+						<td><b> Confirm Password:</b></td>  
+						<td><input type="password" id="cpwd" name="cpwd" size="35"/></td>
+					</tr>
+					<tr>
+						<td><b>E-Mail:</b></td>  
+						<td><input type="email" id="e-mail" name="e-mail" size="35" value="{EMAIL}"/></td></BR></BR></BR>
+					</tr>
+			
+					<tr>
+						<td><b>Profile Image</b></td>  
+						<td>
+							<input type="file" id="profileId" onchange="showimg(this);"  name="profileIcon" size="35"/>
+							<div class="profile_wrapper">
+								<img  id="preview" width="100px" height="100px">
+							</div>
+						</td>
+					</tr>
+			
+				</table>
+			
+			<input type="hidden" name="formsubmitted" value="TRUE" />
+      		<button type="submit">Register</button>
+		</form>
+	<div id = "login">
+		<label>
+			<a href="Login.php">Already has account? Login Now!</a>
+		</label>
+	</div>
+	<div class="error">
+		{MESSAGE}
+	</div>
+	
+	</section>
+	</div>
+</body>
+</html>

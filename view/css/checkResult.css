@@ -1,0 +1,57 @@
+.header-image {
+    position:absolute;
+    top:0px;
+    left: 0;
+    right: 0;
+    height: 150px;
+    bottom: 0;
+    background: url(../../view/img/header1.jpg) no-repeat 50% 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	}
+	
+div#acc{
+	position:relative;
+    left:200px;
+    top:180px;
+    color:blue;
+    font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+    
+}	
+div#true{
+	position:relative;
+    left:5px;
+    top:200px;
+	
+	margin: 30px;
+	font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+}
+
+div#wrong{
+	position:relative;
+    left:5px;
+    top:200px;
+	color:red;
+	margin: 30px;
+	font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+}
+
+
+
+div#quit{
+	position:absolute;
+    left:1000px;
+    top:200px;
+	
+	font-family: Georgia;
+	font-style:oblique;
+	font-size:20px;
+}
